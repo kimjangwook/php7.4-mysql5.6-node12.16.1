@@ -2,7 +2,6 @@ FROM php:7.3.16-apache
 
 COPY ./php.ini /usr/local/etc/php/
 COPY ./conf/*.conf /etc/apache2/sites-available/
-COPY ./apache2.conf /etc/apache2/
 
 ARG TZ=Asia/Tokyo
 ARG NODE_VERSION=12.x
